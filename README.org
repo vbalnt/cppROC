@@ -1,4 +1,10 @@
 * cppROC
-=====
+Receiver operating characteristic curve (ROC) computation code in C++
 
-** Receiver operating characteristic curve (ROC) computation code in C++
+Compile with 
+`g++ main.cpp roc.cpp -o roc`
+and then run the `roc` excecutable.
+
+*** TODO
+- Add area under ROC curve code (trapezoid rule)
+- Add 95% error rate code (simple interpolation in the ROC curve)
