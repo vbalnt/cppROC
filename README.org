@@ -5,6 +5,6 @@ Compile with
 =g++ main.cpp roc.cpp -o roc=
 and then run the =roc= excecutable.
 
-*** TODO
+*Todo* 
 - Add area under ROC curve code (trapezoid rule)
 - Add 95% error rate code (simple interpolation in the ROC curve)
