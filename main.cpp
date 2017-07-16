@@ -25,8 +25,7 @@ int main(int argc, char *argv[])
   // format of the file: 
   // column 0 -> classification scores (higher is for positive class)
   // column 1 -> class labels (1 is positive class)
-  //ROC roc("classification_result_example.txt");
-  ROC roc("out2-14_RPROP__48_1");
+  ROC roc("classification_result_example.txt");
   // the format of the output file is 
   // column 0 -> False positive points in curve
   // column 1 -> True positive points in curve
