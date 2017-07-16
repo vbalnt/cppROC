@@ -52,7 +52,19 @@ float ROC::get95ErrorRate(){
 
 float ROC::getAreaUnderCurve(){
   // TODO - Implement this
-  return 1.0;
+  int size = TP.size();
+  float q1,q2,p1,p2;
+  q1 = FP[0];
+  q2 = TP[0];
+  float area = 0.0;
+  for(int i=1;i < size;++i){
+    p1 = FP[i];
+    p2 = TP[i];
+    area += sqrt(pow( ((1-q1)+(1-p1))/2 * (q2-p2),2));
+    q1=p1;
+    q2=p2;   
+  }
+  return area;
 }
 
 bool compare(const std::pair<float,int>&i, const std::pair<float,int>&j){

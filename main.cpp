@@ -16,6 +16,7 @@
 
 
 #include "roc.hpp"
+#include <iostream>
 
 // example on how to read a file with classification data 
 // and get the ROC curve 
@@ -24,12 +25,14 @@ int main(int argc, char *argv[])
   // format of the file: 
   // column 0 -> classification scores (higher is for positive class)
   // column 1 -> class labels (1 is positive class)
-  ROC roc("classification_result_example.txt");
+  //ROC roc("classification_result_example.txt");
+  ROC roc("out2-14_RPROP__48_1");
   // the format of the output file is 
   // column 0 -> False positive points in curve
   // column 1 -> True positive points in curve
   roc.writeToFile("roc.txt");
   // roc.txt can then be plotted with gnuplot, mathGL etc. 
+  std::cout << roc.getAreaUnderCurve()<<'\n';
   return 0;
 }
 
