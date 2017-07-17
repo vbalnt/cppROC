@@ -16,6 +16,7 @@
 
 
 #include "roc.hpp"
+#include <iostream>
 
 // example on how to read a file with classification data 
 // and get the ROC curve 
@@ -30,6 +31,7 @@ int main(int argc, char *argv[])
   // column 1 -> True positive points in curve
   roc.writeToFile("roc.txt");
   // roc.txt can then be plotted with gnuplot, mathGL etc. 
+  std::cout << roc.getAreaUnderCurve()<<'\n';
   return 0;
 }
 
