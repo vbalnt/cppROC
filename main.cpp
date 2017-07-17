@@ -1,5 +1,5 @@
-// Copyright (c) 2014 vassilis@entropiece.com
-// www.entropiece.com
+// Copyright (c) 2014 Vassileios Balntas
+// balntas@robots.ox.ac.uk
 
 // cppROC is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
